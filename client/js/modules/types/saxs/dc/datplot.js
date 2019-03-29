@@ -30,6 +30,24 @@ define(['marionette', 'modules/types/gen/dc/models/dat', 'utils',
                             show: false,
                         }
                     },
+                    selection: {
+                        mode: 'xy',
+                    },
+
+                    xaxes: [{
+                        axisLabel: 'Q',
+                        transform: function (v) {
+                            return v === 0 ? 0 : Math.log(v);
+                        },
+                        inverseTransform: function (v) {
+                            return Math.exp(v);
+                        },
+
+                    }],
+
+                    yaxes: [{
+                        axisLabel: 'I',
+                    }],
                 })
 
                 this.plot = $.plot(this.$el, this.model.get('data'), options)
