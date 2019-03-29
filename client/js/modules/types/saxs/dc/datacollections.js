@@ -1,19 +1,21 @@
 define([
-        'modules/types/gen/dc/datacollections',
-        'modules/types/gen/dc/dclist',
+        'modules/dc/datacollections',
+        'modules/dc/dclist',
         'modules/types/saxs/dc/dc',
         'tpl!templates/types/gen/dc/dclist.html',
         ],
 function(DataCollections, DCList, DCItemView, template) {
-    
-    var PowDCList = DCList.extend({
+
+    var SaxsDCList = DCList.extend({
         dcViews: {
             data: DCItemView,
         }
     })
     
     return DataCollections.extend({
-        dcListView: PowDCList,
+        dcListView: SaxsDCList,
         template: template,
+        filters: false,
+        sampleChanger: false,
     })
 })
