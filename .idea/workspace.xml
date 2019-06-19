@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98edeaa5-bb0c-46d0-bf84-e71d319450b2" name="Default Changelist" comment="" />
+    <list default="true" id="98edeaa5-bb0c-46d0-bf84-e71d319450b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/js/modules/types/saxs/dc/autointegrationSAXS.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/modules/types/saxs/dc/autointegrationSAXS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc_autoprocSAXS.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc_autoprocSAXS.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,37 +15,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/js/modules/dc/views/autointegration.js">
+        <entry file="file://$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc_autoprocSAXS.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2070">
-              <caret line="138" column="24" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="24" />
+            <state relative-caret-position="153">
+              <caret line="73" column="9" lean-forward="true" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc.html">
+        <entry file="file://$PROJECT_DIR$/client/js/modules/types/saxs/dc/autointegrationSAXS.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/js/modules/types/saxs/dc/dc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/includes/pages/class.dc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="735" column="17" selection-start-line="735" selection-start-column="17" selection-end-line="735" selection-end-column="17" />
+            <state relative-caret-position="648">
+              <caret line="147" column="2" selection-start-line="147" selection-start-column="2" selection-end-line="147" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -117,19 +103,21 @@
         <option value="$PROJECT_DIR$/client/js/modules/types/saxs/dc/datplotlarge.js" />
         <option value="$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc.html" />
         <option value="$PROJECT_DIR$/client/js/modules/types/saxs/dc/dc.js" />
-        <option value="$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc_autoprocSAXS.html" />
         <option value="$PROJECT_DIR$/client/js/modules/types/saxs/dc/autointegrationSAXS.js" />
+        <option value="$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc_autoprocSAXS.html" />
       </list>
     </option>
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1167" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2727" />
+    <option name="y" value="86" />
+    <option name="width" value="1169" />
+    <option name="height" value="875" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -139,237 +127,38 @@
         <subPane>
           <expand>
             <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="SynchWeb-toPush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchWeb-toPush" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="SynchWeb-toPush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchWeb-toPush" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="SynchWeb-toPush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchWeb-toPush" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-              <item name="collections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="em" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="em" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="pow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="pow" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="saxs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="saxs" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="xpdf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="xpdf" type="462c0819:PsiDirectoryNode" />
-              <item name="samples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="xpdf" type="462c0819:PsiDirectoryNode" />
-              <item name="samples" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="xpdf" type="462c0819:PsiDirectoryNode" />
-              <item name="shipment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="SynchWeb-toPush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchWeb-toPush" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="cell" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="dc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="stats" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="SynchWeb-toPush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchWeb-toPush" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="types" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="SynchWeb-toPush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchWeb-toPush" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
@@ -377,8 +166,8 @@
               <item name="saxs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="SynchWeb-toPush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchWeb-toPush" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
@@ -387,8 +176,8 @@
               <item name="dc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="SynchWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SynchWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="SynchWeb-toPush" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SynchWeb-toPush" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
@@ -404,7 +193,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../L-SynchWeb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -442,17 +231,19 @@
       <workItem from="1553082870424" duration="7000" />
       <workItem from="1553083017260" duration="33000" />
       <workItem from="1553083065935" duration="1284000" />
+      <workItem from="1553869413620" duration="1257000" />
+      <workItem from="1560853099090" duration="418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99058000" />
+    <option name="totallyTimeSpent" value="101293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1167" extended-state="6" />
+    <frame x="2727" y="86" width="1169" height="875" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15918803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27029437" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -647,13 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/views/dialogplot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/js/views/dialogplot.js" />
     <entry file="file://$PROJECT_DIR$/client/js/templates/dc/dc_autoproc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -757,6 +542,14 @@
     <entry file="file://$PROJECT_DIR$/client/js/modules/dc/collections/autointegrations.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/config.php" />
+    <entry file="file://$PROJECT_DIR$/client/js/modules/dc/views/autointegration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="944">
+          <caret line="138" column="24" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -764,53 +557,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc_autoprocSAXS.html">
+    <entry file="file://$PROJECT_DIR$/api/includes/pages/class.dc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-          <folding>
-            <element signature="e#323#328#0" expanded="true" />
-            <element signature="e#762#767#0" expanded="true" />
-            <element signature="e#644#651#1" expanded="true" />
-            <element signature="e#1707#1714#1" expanded="true" />
-            <element signature="e#1740#1746#1" expanded="true" />
-            <element signature="e#1772#1779#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/modules/types/saxs/dc/autointegrationSAXS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="189" column="10" lean-forward="true" selection-start-line="189" selection-start-column="10" selection-end-line="189" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="229" column="27" selection-start-line="229" selection-start-column="27" selection-end-line="229" selection-end-column="27" />
+        <state relative-caret-position="11025">
+          <caret line="735" column="17" selection-start-line="735" selection-start-column="17" selection-end-line="735" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/modules/types/saxs/dc/dc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        <state relative-caret-position="580">
+          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/includes/pages/class.dc.php">
+    <entry file="file://$PROJECT_DIR$/client/js/modules/types/saxs/dc/autointegrationSAXS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="735" column="17" selection-start-line="735" selection-start-column="17" selection-end-line="735" selection-end-column="17" />
+        <state relative-caret-position="648">
+          <caret line="147" column="2" selection-start-line="147" selection-start-column="2" selection-end-line="147" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/js/modules/dc/views/autointegration.js">
+    <entry file="file://$PROJECT_DIR$/client/js/templates/types/saxs/dc/dc_autoprocSAXS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="138" column="24" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="73" column="9" lean-forward="true" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
         </state>
       </provider>
     </entry>

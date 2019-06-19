@@ -6,27 +6,27 @@ define(['marionette',
     'modules/dc/views/aiplots',
     'modules/dc/views/autoprocattachments',
     'modules/dc/views/apmessages',
-
     'backbone',
     'modules/dc/views/dc',
     'modules/dc/views/imagestatusitem',
-
     'views/log',
     'views/table',
     'utils/table',
     'utils',
     'tpl!templates/types/saxs/dc/dc_autoprocSAXS.html'], function(Marionette, TabView,
-        AutoProcAttachments, AutoIntegrations,
-        RDPlotView, AIPlotsView, AutoProcAttachmentsView, APMessagesView,
-        Backbone, DCItemView, DCImageStatusItem,
-        LogView, TableView, table,
-        utils, template) {
+                                                                  AutoProcAttachments, AutoIntegrations,
+                                                                  RDPlotView, AIPlotsView, AutoProcAttachmentsView, APMessagesView,
+                                                                  Backbone, DCItemView, DCImageStatusItem,
+                                                                  LogView, TableView, table,
+                                                                  utils, template) {
+
+
 
 
     var AutoIntegrationItem = Marionette.LayoutView.extend({
         template: template,
         modelEvents: { 'change': 'render' },
-
+        imageStatusItem: DCImageStatusItem,
         events: {
             'click .logf': 'showLog',
             'click .rd': 'showRD',
@@ -41,8 +41,16 @@ define(['marionette',
 
         onRender: function() {
             this.messages.show(new APMessagesView({ messages: new Backbone.Collection(this.model.get('MESSAGES')), embed: true }))
-        },
 
+        },
+        onShow: function() {
+            // element not always available at this point?
+            var w = 0.175*$(window).width()*0.95
+            var h = $(window).width() > 1280 ? w : ($(window).width() > 800 ? w*1.3 : (w*1.65))
+            $('.distl,.diffraction,.snapshots', this.$el).height(h*0.8)
+
+            // this.imagestatus = new (this.getOption('imageStatusItem'))({ ID: this.model.get('ID'), TYPE: this.model.get('DCT'), statuses: this.getOption('imagestatuses'), el: this.$el })
+        },
         showAttachments: function(e) {
             e.preventDefault()
 
@@ -76,6 +84,11 @@ define(['marionette',
             app.dialog.show(new DialogView({ title: 'RD Plot', view: new RDPlotView({ aid: this.model.get('AID'), id: this.getOption('templateHelpers').DCID }), autoSize: true }))
         },
 
+        onDestroy: function() {
+            this.imagestatus.destroy()
+        },
+
+
         showPlots: function(e) {
             e.preventDefault()
             app.dialog.show(new DialogView({ title: 'Integration Statistic Plots', view: new AIPlotsView({ aid: this.model.get('AID'), id: this.getOption('templateHelpers').DCID }), autoSize: true }))
@@ -94,19 +107,6 @@ define(['marionette',
                 templateHelpers: { DCID: this.getOption('id'), APIURL: app.apiurl }
             }
         },
-    })
-
-    var SelectTabRow = Backgrid.Row.extend({
-        events: {
-            'click': 'selectTab',
-        },
-
-        selectTab: function(e) {
-            e.preventDefault()
-
-            console.log('click row' ,this.model.get('AID'), this.$el.closest('.sw'))
-            this.$el.closest('.summary').siblings('.sw').find('a[href="#tabs-'+this.model.get('AID')+'"]').trigger('click');
-        }
     })
 
 
@@ -144,49 +144,5 @@ define(['marionette',
             this.$el.slideDown()
         }
 
-    })
-
-
-
-
-
-    return DCItemView.extend({
-        template: template,
-        imageStatusItem: DCImageStatusItem,
-        //
-        events: {
-
-            'click a.sn': 'showSnapshots',
-        },
-        //
-        ui: {
-            temp: 'span.temp',
-            exp: 'i.expand',
-            cc: '.dcc',
-            rp: 'a.reprocess',
-        },
-        //
-        initialize: function(options) {
-            this.fullPath = false
-        },
-        //
-        onShow: function() {
-        //     // element not always available at this point?
-            var w = 0.175*$(window).width()*0.95
-        //     var h = $(window).width() > 1280 ? w : ($(window).width() > 800 ? w*1.3 : (w*1.65))
-            $('.snapshots', this.$el).height(h*0.8)
-        //
-            if (this.getOption('plotView')) this.plotview = new (this.getOption('plotView'))({ parent: this.model, el: this.$el.find('.distl') })
-        //
-            Backbone.Validation.unbind(this)
-            Backbone.Validation.bind(this)
-        //
-            this.imagestatus = new (this.getOption('imageStatusItem'))({ DCID: this.model.get('ID'), TYPE: this.model.get('DCT'), statuses: this.getOption('imagestatuses'), el: this.$el })
-        },
-
-        showSnapshots: function(e) {
-            e.preventDefault()
-            this.$el.find('.snapshots a').eq(0).trigger('click')
-        },
     })
 })

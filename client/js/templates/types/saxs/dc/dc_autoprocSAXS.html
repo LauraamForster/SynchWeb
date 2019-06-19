@@ -1,126 +1,106 @@
 
-    <div class="messages"></div>
+<div class="messages"></div>
 
-    <% if (PROCESSINGSTATUS == 0) { %>
+<% if (PROCESSINGSTATUS == 0) { %>
 
-    <p class="r downloads">
-        <a class="view button dll" href="<%-APIURL%>/download/id/<%-DCID%>/aid/<%-AID%>/archive/1"><i class="fa fa-archive"></i> Archive</a>
-        <a class="apattach button" href="#"><i class="fa fa-files-o"></i> Logs &amp; Files</a>
-    </p>
+<p>This procesing job failed: <%-PROCESSINGMESSAGE%></p>
 
-    <p>This procesing job failed: <%-PROCESSINGMESSAGE%></p>
+<% } else { %>
 
-    <% } else { %>
+<p class="r downloads">
+    <a class="apattach button" href="#"><i class="fa fa-files-o"></i> Attachments</a>
+</p>
 
-    <p class="r downloads">
-        <a class="plot button" href="#"><i class="fa fa-line-chart"></i> Plots</a>
-        <a class="view button dll" href="<%-APIURL%>/download/id/<%-DCID%>/aid/<%-AID%>/archive/1"><i class="fa fa-archive"></i> Archive</a>
-        <a class="apattach button" href="#"><i class="fa fa-files-o"></i> Logs &amp; Files</a>
 
-        <% if (TYPE == 'fast_dp') { %>
-        <a href="#" class="button view rd"><i class="fa fa-search"></i> Radiation Damage</a>
-        <% } %>
 
-        <a class="view button" title="Lookup Unit Cell" href="/cell/a/<%-CELL.CELL_A%>/b/<%-CELL.CELL_B%>/c/<%-CELL.CELL_C%>/al/<%-CELL.CELL_AL%>/be/<%-CELL.CELL_BE%>/ga/<%-CELL.CELL_GA%>"><i class="fa fa-search"></i> Lookup Cell</a>
+<table class="reflow cell">
+    <thead>
+    Fitted params
+    <tr>
+        <th>Model</th>
+        <th>Param1</th>
+        <th>Param2</th>
+        <th>Param3</th>
+        <th>Param4</th>
+        <th>Param5</th>
+        <th>Param6</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><%-SG%></td>
+        <td><%-CELL.CELL_A%></td>
+        <td><%-CELL.CELL_B%></td>
+        <td><%-CELL.CELL_C%></td>
+        <td><%-CELL.CELL_AL%></td>
+        <td><%-CELL.CELL_BE%></td>
+        <td><%-CELL.CELL_GA%></td>
+    </tr>
+    </tbody>
+</table>
 
-    <div class="data_collection" dcid="<%-DCID%>" type="data">
-    <div class="snapshots" title="View sample snapshots for the current data collection">
+<table class="reflow cell">
+    <thead>
+    Original Model params
+    <tr>
+        <th>Model</th>
+        <th>Param1</th>
+        <th>Param2</th>
+        <th>Param3</th>
+        <th>Param4</th>
+        <th>Param5</th>
+        <th>Param6</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><%-SG%></td>
+        <td><%-CELL.CELL_A%></td>
+        <td><%-CELL.CELL_B%></td>
+        <td><%-CELL.CELL_C%></td>
+        <td><%-CELL.CELL_AL%></td>
+        <td><%-CELL.CELL_BE%></td>
+        <td><%-CELL.CELL_GA%></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<table class="reflow bc">
+    <thead>
+    <tr>
+        <th>ProcessingInfo</th>
+        <th>Y</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Program</td>
+        <td><%-SG%></td>
+
+    </tr>
+    <!-- these are flipped, not sure why? -->
+    <tr>
+        <td>Error</td>
+        <td><%-BEAM.REFINEDYBEAM%></td>
+    </tr>
+    <tr>
+        <td>ChiSq</td>
+        <td><%-(BEAM.XBEAM-BEAM.REFINEDYBEAM).toFixed(2)%></td>
+    </tr>
+
+    </tbody>
+</table>
+
+<% } %>
+
+<div class="data_collection" dcid="<%-DCID%>" type="data">
+
+    <div class="snapshots" title="View crystal snapshots for the current data collection">
         <a href="<%-APIURL%>/image/id/<%-DCID%>/f/1" title="Crystal Snapshot 1"><img dsrc="" alt="Crystal Snapshot 1" /></a>
     </div>
+    <div class="diffraction" title="Click to view diffraction images">
+        <a href="/dc/view/id/<%-DCID%>/f/2"><img dsrc="" alt="Diffraction Image 1" /></a>
     </div>
 
-
-
-    </p>
-
-    <table class="reflow bc">
-        <thead>
-            <tr>
-                <th>Beam Centre</th>
-                <th>X</th>
-                <th>Y</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Start</td>
-                <td><%-BEAM.XBEAM%></td>
-                <td><%-BEAM.YBEAM%></td>
-            </tr>
-            <!-- these are flipped, not sure why? -->
-            <tr>
-                <td>Refined</td>
-                <td><%-BEAM.REFINEDYBEAM%></td>
-                <td><%-BEAM.REFINEDXBEAM%></td>
-            </tr>
-            <tr>
-                <td>&Delta;</td>
-                <td><%-(BEAM.XBEAM-BEAM.REFINEDYBEAM).toFixed(2)%></td>
-                <td><%-(BEAM.YBEAM-BEAM.REFINEDXBEAM).toFixed(2)%></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table class="reflow cell">
-        <thead>
-            <tr>
-                <th>Space Group</th>
-                <th>A</th>
-                <th>B</th>
-                <th>C</th>
-                <th>&alpha;</th>
-                <th>&beta;</th>
-                <th>&gamma;</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><%-SG%></td>
-                <td><%-CELL.CELL_A%></td>
-                <td><%-CELL.CELL_B%></td>
-                <td><%-CELL.CELL_C%></td>
-                <td><%-CELL.CELL_AL%></td>
-                <td><%-CELL.CELL_BE%></td>
-                <td><%-CELL.CELL_GA%></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table class="reflow shell">
-        <thead>
-            <tr>
-                <th>Shell</th>
-                <th>Observations</th>
-                <th>Unique</th>
-                <th>Resolution</th>
-                <th>Rmeas</th>
-                <th>I/sig(I)</th>
-                <th>CC Half</th>
-                <th>Completeness</th>
-                <th>Multiplicity</th>
-                <th>Anom Completeness</th>
-                <th>Anom Multiplicity</th>
-                <th>CC Anom</th>
-            </tr>
-        </thead>
-    <% _.each(SHELLS, function(s, n) { %>
-        <tr class="<%-n%>">
-            <td><%-n%></td>
-            <td><%-s.NTOBS%></td>
-            <td><%-s.NUOBS%></td>
-            <td><%-s.RHIGH%> - <%-s.RLOW%></td>
-            <td><% print(TYPE == 'Fast DP' ? s.RMERGE : s.RMEAS)%></td>
-            <td><%-s.ISIGI%></td>
-            <td><%-s.CCHALF%></td>
-            <td><%-s.COMPLETENESS%></td>
-            <td><%-s.MULTIPLICITY%></td>
-            <td><%-s.ANOMCOMPLETENESS%></td>
-            <td><%-s.ANOMMULTIPLICITY%></td>
-            <td><%-s.CCANOMALOUS%></td>
-        </tr>
-    <% }) %>
-    </table>
-
-    <% } %>
-
-
+</div>
